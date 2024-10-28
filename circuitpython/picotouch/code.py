@@ -39,6 +39,8 @@ midi_cc_num = 1   # standard modwheel
 touch_threshold_adjust = 300
 
 midi = adafruit_midi.MIDI(midi_out=usb_midi.ports[1])
+// midi_uart = adafruit_midi.MIDI(midi_out=hw.uart, midi_in=hw.uart)
+// midi_usb = adafruit_midi.MIDI(midi_out=usb_midi.ports[1], midi_in=usb_midi.ports[0])
 
 touch_pins = (
     board.GP0, board.GP1, board.GP2, board.GP3, board.GP4, board.GP5,
